@@ -20,6 +20,7 @@ searchEl.value = null;
 
 ///////////////////////////////////////////////////////
 var baseUrl = 'https://api.weatherapi.com/v1';
+var apiKey = '3a4eed849de049e9991132727252610';
 var endpoint = 'forecast.json';
 
 var directions = {
@@ -111,7 +112,7 @@ function getPosition(pos) {
 async function getForecast(query = `${position.lat},${position.lon}`) {
   try {
     var request = await fetch(
-      `${baseUrl}/${endpoint}?key=${config.apiKey}&q=${query}&days=3`
+      `${baseUrl}/${endpoint}?key=${apiKey}&q=${query}&days=3`
     );
 
     if (!request.ok)
