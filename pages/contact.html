@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather</title>
+
+    <link rel="stylesheet" href="../css/styles.css" />
+  </head>
+  <body>
+    <header class="site-header background-dark">
+      <div class="wrapper">
+        <div class="site-header__inner">
+          <a class="logo" href="/">
+            <img
+              class="logo-img"
+              src="https://routeweather.netlify.app/images/logo.png"
+              alt="cloud shape for the site logo"
+            />
+
+            <div class="logo-text-box">
+              <p class="font-size-regular">Weather</p>
+              <small class="text-main">tagline goes here </small>
+            </div>
+          </a>
+
+          <button
+            class="hamburger-btn"
+            aria-controls="site-navigation"
+            aria-expanded="false"
+          >
+            <i class="fa fa-bars"></i>
+          </button>
+
+          <nav class="site-navigation">
+            <ul role="list">
+              <li><a href="/">Home</a></li>
+              <li><a href="#">News</a></li>
+              <li><a href="#">Live cameras</a></li>
+              <li><a href="#">Photos</a></li>
+              <li><a data-active="true" href="/contact.html">Contact</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <main class="background-dark">
+      <div class="wrapper">
+        <div class="breadcrumb background-main">
+          <a href="/">Home</a>
+          <span>&rarr;</span>
+          <span>Contact</span>
+        </div>
+      </div>
+
+      <div class="section wrapper contact">
+        <div class="contact-details background-main">
+          <div
+            class="map"
+            data-latitude="-6.897789"
+            data-longitude="107.621735"
+          ></div>
+
+          <div class="contact-info">
+            <address>
+              <img
+                src="https://routeweather.netlify.app/images/icon-marker.png"
+                alt=""
+              />
+              <p>
+                Company Name INC. <br />
+                2803 Avenue Street, Los Angeles
+              </p>
+            </address>
+
+            <a href="#"
+              ><img
+                src="https://routeweather.netlify.app/images/icon-phone.png"
+                alt=""
+              />+1 800 314 235</a
+            >
+            <a href="#"
+              ><img
+                src="https://routeweather.netlify.app/images/icon-envelope.png"
+                alt=""
+              />contact@companyname.com</a
+            >
+          </div>
+        </div>
+
+        <div class="contact-data">
+          <h2 class="section-title">Contact us</h2>
+
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi
+            consectetur inventore ducimus, facilis, numquam id soluta omnis eius
+            recusandae nesciunt vero repellat harum cum. Nisi facilis odit hic,
+            ipsum sed!
+          </p>
+
+          <form class="contact-form">
+            <input type="text" placeholder="Your name..." />
+            <input type="text" placeholder="Email Addresss..." />
+            <input type="text" placeholder="Company name..." />
+            <input type="text" placeholder="Website..." />
+            <textarea rows="5" placeholder="Message..."></textarea>
+            <input
+              onclick="event.preventDefault()"
+              type="submit"
+              placeholder="Send message"
+            />
+          </form>
+        </div>
+      </div>
+    </main>
+
+    <footer class="section site-footer background-main">
+      <div class="wrapper">
+        <div class="group">
+          <form class="form-subscribe">
+            <input type="text" placeholder="Enter you email to subscribe..." />
+            <input
+              onclick="event.preventDefault()"
+              class="btn"
+              type="submit"
+              value="Subscribe"
+            />
+          </form>
+
+          <div class="social-links">
+            <a href="#"><i class="fa fa-facebook"></i></a>
+            <a href="#"><i class="fa fa-twitter"></i></a>
+            <a href="#"><i class="fa fa-google-plus"></i></a>
+            <a href="#"><i class="fa fa-pinterest"></i></a>
+          </div>
+        </div>
+
+        <p>
+          Copyright 2014 Company name. Designed by Themezy. All rights reserved
+        </p>
+      </div>
+    </footer>
+
+    <script
+      src="https://kit.fontawesome.com/d943adc6a2.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="../main.js"></script>
+  </body>
+</html>

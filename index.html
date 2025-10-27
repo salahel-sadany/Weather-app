@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather</title>
+
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <header class="site-header background-dark">
+      <div class="wrapper">
+        <div class="site-header__inner">
+          <a class="logo" href="/">
+            <img
+              class="logo-img"
+              src="https://routeweather.netlify.app/images/logo.png"
+              alt="cloud shape for the site logo"
+            />
+
+            <div class="logo-text-box">
+              <p class="font-size-regular">Weather</p>
+              <small class="text-main">tagline goes here </small>
+            </div>
+          </a>
+
+          <button
+            class="hamburger-btn"
+            aria-controls="site-navigation"
+            aria-expanded="false"
+          >
+            <i class="fa fa-bars"></i>
+          </button>
+
+          <nav class="site-navigation">
+            <ul role="list">
+              <li><a data-active="true" href="/">Home</a></li>
+              <li><a href="#">News</a></li>
+              <li><a href="#">Live cameras</a></li>
+              <li><a href="#">Photos</a></li>
+              <li><a href="/pages/contact.html">Contact</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="section hero">
+        <div class="wrapper">
+          <form class="form-find">
+            <input id="search" type="text" placeholder="Find you location..." />
+            <input id="findBtn" class="btn" type="submit" value="Find" />
+          </form>
+        </div>
+      </section>
+
+      <section class="section forecast background-dark">
+        <div class="wrapper">
+          <div class="forecast-container equal-columns" data-state="loading">
+            <div class="wrapper text-center failed">
+              <p>
+                Can't access your location please allow to show weather or
+                Search with city name
+              </p>
+            </div>
+
+            <div class="forecast today">
+              <div class="forecast-header">
+                <span class="day"></span>
+                <span class="date"></span>
+              </div>
+
+              <div class="forecast-content">
+                <div class="location"></div>
+                <div class="degree">
+                  <div class="num"></div>
+                  <div class="icon"></div>
+                </div>
+                <div class="custom text-brand"></div>
+
+                <div class="state">
+                  <div class="humidity">
+                    <img src="" />
+                    <span></span>
+                  </div>
+                  <div class="wind-speed">
+                    <img src="" />
+                    <span></span>
+                  </div>
+                  <div class="wind-dir">
+                    <img src="" />
+                    <span></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="forecast background-main">
+              <div class="forecast-header">
+                <span class="day"></span>
+              </div>
+
+              <div class="forecast-content">
+                <div class="degree">
+                  <div class="icon">
+                    <img src="" />
+                  </div>
+
+                  <div class="num"></div>
+                  <small></small>
+                </div>
+                <div class="custom text-brand"></div>
+              </div>
+            </div>
+
+            <div class="forecast">
+              <div class="forecast-header">
+                <span class="day"></span>
+              </div>
+
+              <div class="forecast-content">
+                <div class="degree">
+                  <div class="icon">
+                    <img src="" />
+                  </div>
+
+                  <div class="num"></div>
+                  <small></small>
+                </div>
+                <div class="custom text-brand"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="section site-footer background-main">
+      <div class="wrapper">
+        <div class="group">
+          <form class="form-subscribe">
+            <input type="text" placeholder="Enter you email to subscribe..." />
+            <input
+              onclick="event.preventDefault()"
+              class="btn"
+              type="submit"
+              value="Subscribe"
+            />
+          </form>
+
+          <div class="social-links">
+            <a href="#"><i class="fa fa-facebook"></i></a>
+            <a href="#"><i class="fa fa-twitter"></i></a>
+            <a href="#"><i class="fa fa-google-plus"></i></a>
+            <a href="#"><i class="fa fa-pinterest"></i></a>
+          </div>
+        </div>
+
+        <p>
+          Copyright 2014 Company name. Designed by Themezy. All rights reserved
+        </p>
+      </div>
+    </footer>
+
+    <script
+      src="https://kit.fontawesome.com/d943adc6a2.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="js/config.js"></script>
+    <script src="main.js"></script>
+  </body>
+</html>
